@@ -1,0 +1,9 @@
+<%= form_for @user do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= image_tag @user.photo.url(:thumb) %>
+  <%= f.file_field :photo, placeholder: "Upload Photo"%>
+  <%= f.submit "submit" %>
+<% end %>
