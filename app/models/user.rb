@@ -14,9 +14,9 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :photo, :content_type => /\Aimage\/.*\Z/
 
   def s3_credentials
-    {:bucket => "rails-img", 
-     :access_key_id => "AKIAIABMSUNT5RTAW2GQ",
-     :secret_access_key => "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"
+    {:bucket => "xxxx", 
+     :access_key_id => "xxxx",
+     :secret_access_key => "xxxx"
     }
   end
 end
